@@ -41,7 +41,7 @@ public:
 	}
 
 	template<typename C> inline uint32_t rank(const MemReq* req, C cands) {
-		uint32_t bestCand = -1;
+		int bestCand = -1;
 
 		// assumning the C cands represents the array values of the candidates i.e array[id] values in some particular order
 		for (auto ci = cands.begin(); ci != cands.end(); ci.inc()) {
@@ -65,7 +65,7 @@ public:
 			std::cout << "Adil: Serious Error happening here"<<std::endl;
 		}
 
-		return bestCand;
+		return (uint32_t)bestCand;
 	}
 
 	DECL_RANK_BINDINGS;
