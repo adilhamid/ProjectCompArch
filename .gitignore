@@ -1,0 +1,6 @@
+#Git Ignore file
+casim/zsim/build/*
+casim/zsim/outputs/*
+
+
+
